@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Starbucks Indonesia - Bring Your Own Tumbler</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+background:#f7f7f7;
+color:#333;
+line-height:1.6;
+}
+
+/* NAVBAR */
+
+header{
+position:fixed;
+top:0;
+width:100%;
+background:white;
+box-shadow:0 2px 15px rgba(0,0,0,.1);
+z-index:999;
+}
+
+.navbar{
+max-width:1200px;
+margin:auto;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:18px 30px;
+}
+
+.logo{
+font-size:30px;
+font-weight:800;
+color:#006241;
+}
+
+.navbar ul{
+display:flex;
+list-style:none;
+gap:25px;
+}
+
+.navbar a{
+text-decoration:none;
+color:#333;
+font-weight:600;
+transition:.3s;
+}
+
+.navbar a:hover{
+color:#006241;
+}
+
+/* HERO */
+
+.hero{
+height:100vh;
+background:
+linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+url('brosur.jpg');
+background-size:cover;
+background-position:center;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+color:white;
+padding:20px;
+}
+
+.hero-content{
+max-width:850px;
+}
+
+.hero-content h1{
+font-size:65px;
+margin-bottom:20px;
+}
+
+.hero-content p{
+font-size:22px;
+margin-bottom:30px;
+}
+
+.btn{
+display:inline-block;
+padding:15px 35px;
+background:#006241;
+color:white;
+text-decoration:none;
+border-radius:50px;
+font-weight:600;
+}
+
+.btn:hover{
+background:#004d35;
+}
+
+section{
+padding:100px 10%;
+}
+
+.section-title{
+text-align:center;
+font-size:42px;
+margin-bottom:50px;
+color:#006241;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+}
+
+.card{
+background:white;
+padding:30px;
+border-radius:15px;
+box-shadow:0 5px 20px rgba(0,0,0,.08);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+}
+
+.card h3{
+margin-bottom:15px;
+color:#006241;
+}
+
+/* STATS */
+
+.stats{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+margin-top:40px;
+}
+
+.stat-box{
+background:#006241;
+color:white;
+padding:30px;
+border-radius:15px;
+text-align:center;
+}
+
+.stat-box h2{
+font-size:40px;
+}
+
+/* BERITA */
+
+.news-card{
+background:white;
+padding:25px;
+margin-bottom:20px;
+border-left:5px solid #006241;
+border-radius:10px;
+box-shadow:0 3px 15px rgba(0,0,0,.08);
+}
+
+.news-card h3{
+color:#006241;
+margin-bottom:10px;
+}
+
+/* BROSUR */
+
+.brosur{
+text-align:center;
+}
+
+.brosur img{
+width:100%;
+max-width:900px;
+border-radius:20px;
+box-shadow:0 10px 30px rgba(0,0,0,.15);
+}
+
+/* GALERI */
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.gallery-item{
+background:white;
+padding:15px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+.gallery-item img{
+width:100%;
+height:250px;
+object-fit:cover;
+border-radius:12px;
+}
+
+.gallery-item h3{
+margin-top:10px;
+color:#006241;
+}
+
+/* KONTAK */
+
+.contact{
+background:white;
+padding:35px;
+border-radius:15px;
+box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+/* FOOTER */
+
+footer{
+background:#1b1b1b;
+color:white;
+text-align:center;
+padding:50px 20px;
+}
+
+@media(max-width:768px){
+
+.navbar{
+flex-direction:column;
+}
+
+.navbar ul{
+margin-top:15px;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.hero-content h1{
+font-size:42px;
+}
+
+.hero-content p{
+font-size:18px;
+}
+
+.section-title{
+font-size:32px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="navbar">
+
+<div class="logo">
+☕ STARBUCKS
+</div>
+
+<ul>
+<li><a href="#profil">Profil</a></li>
+<li><a href="#kampanye">Kampanye</a></li>
+<li><a href="#berita">Berita</a></li>
+<li><a href="#brosur">Brosur</a></li>
+<li><a href="#galeri">Galeri</a></li>
+<li><a href="#kontak">Kontak</a></li>
+</ul>
+
+</div>
+
+</header>
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>Bring Your Own Tumbler</h1>
+
+<p>
+Bawa tumblermu, bawa perubahan.
+Bersama Starbucks Indonesia mari kurangi penggunaan plastik sekali pakai.
+</p>
+
+<a href="#kampanye" class="btn">
+Pelajari Kampanye
+</a>
+
+</div>
+
+</section>
+
+<section id="profil">
+
+<h2 class="section-title">
+Profil Perusahaan
+</h2>
+
+<div class="card">
+
+<h3>Tentang Starbucks Indonesia</h3>
+
+<p>
+Starbucks Coffee Indonesia merupakan bagian dari jaringan Starbucks global yang menghadirkan kopi berkualitas tinggi serta pengalaman terbaik bagi pelanggan. Starbucks tidak hanya menjadi tempat menikmati kopi, tetapi juga ruang untuk berkumpul, bekerja, dan membangun komunitas.
+</p>
+
+</div>
+
+<br>
+
+<div class="grid">
+
+<div class="card">
+<h3>📖 Sejarah Singkat</h3>
+<p>
+Starbucks didirikan pada tahun 1971 di Seattle, Amerika Serikat. Starbucks Indonesia membuka gerai pertamanya pada tahun 2002 di Plaza Indonesia, Jakarta dan terus berkembang di berbagai kota besar di Indonesia.
+</p>
+</div>
+
+<div class="card">
+<h3>🎯 Visi</h3>
+<p>
+Menjadi perusahaan kopi terdepan yang menginspirasi dan membangun hubungan antar manusia melalui pengalaman terbaik dalam setiap cangkir kopi.
+</p>
+</div>
+
+<div class="card">
+<h3>🚀 Misi</h3>
+<ul>
+<li>Menyediakan kopi berkualitas tinggi.</li>
+<li>Memberikan pelayanan terbaik kepada pelanggan.</li>
+<li>Mendukung keberlanjutan lingkungan.</li>
+<li>Menciptakan dampak positif bagi masyarakat.</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>🏢 Struktur Organisasi</h3>
+<p>
+CEO → Regional Director → Area Manager → Store Manager → Supervisor → Barista
+</p>
+</div>
+
+<div class="card">
+<h3>☕ Bidang Usaha</h3>
+<ul>
+<li>Kopi Premium</li>
+<li>Minuman Non-Kopi</li>
+<li>Makanan & Pastry</li>
+<li>Merchandise Starbucks</li>
+<li>Program Sustainability</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>⭐ Nilai Perusahaan</h3>
+<ul>
+<li>Integritas</li>
+<li>Kualitas</li>
+<li>Inovasi</li>
+<li>Keberagaman</li>
+<li>Keberlanjutan</li>
+</ul>
+</div>
+
+</div>
+
+<div class="stats">
+
+<div class="stat-box">
+<h2>38.000+</h2>
+<p>Gerai Dunia</p>
+</div>
+
+<div class="stat-box">
+<h2>80+</h2>
+<p>Negara</p>
+</div>
+
+<div class="stat-box">
+<h2>500.000+</h2>
+<p>Pengguna Tumbler</p>
+</div>
+
+<div class="stat-box">
+<h2>30%</h2>
+<p>Pengurangan Plastik</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="kampanye">
+
+<h2 class="section-title">
+Kampanye Bring Your Own Tumbler
+</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>What</h3>
+<p>Kampanye membawa tumbler pribadi saat membeli minuman Starbucks.</p>
+</div>
+
+<div class="card">
+<h3>Who</h3>
+<p>Seluruh pelanggan Starbucks Indonesia.</p>
+</div>
+
+<div class="card">
+<h3>Where</h3>
+<p>Berlaku di seluruh gerai Starbucks Indonesia.</p>
+</div>
+
+<div class="card">
+<h3>When</h3>
+<p>Dimulai tahun 2026 dan berlangsung berkelanjutan.</p>
+</div>
+
+<div class="card">
+<h3>Why</h3>
+<p>Mengurangi penggunaan plastik sekali pakai dan menjaga lingkungan.</p>
+</div>
+
+<div class="card">
+<h3>How</h3>
+<p>Pelanggan membawa tumbler sendiri dan mendapatkan potongan harga.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="berita">
+
+<h2 class="section-title">
+Berita Perusahaan
+</h2>
+
+<div class="news-card">
+<h3>Peluncuran Kampanye Bring Your Own Tumbler</h3>
+<p>
+Starbucks Indonesia mengajak pelanggan menggunakan tumbler pribadi sebagai bagian dari komitmen keberlanjutan perusahaan.
+</p>
+</div>
+
+<div class="news-card">
+<h3>Gerakan Peduli Lingkungan</h3>
+<p>
+Starbucks terus mengurangi penggunaan plastik sekali pakai melalui berbagai program ramah lingkungan.
+</p>
+</div>
+
+<div class="news-card">
+<h3>Kolaborasi Dengan Komunitas Hijau</h3>
+<p>
+Perusahaan bekerja sama dengan komunitas lingkungan untuk meningkatkan kesadaran masyarakat.
+</p>
+</div>
+
+</section>
+
+<section id="brosur">
+
+<h2 class="section-title">
+Brosur Kampanye
+</h2>
+
+<div class="brosur">
+
+<img src="brosur.jpg" alt="Brosur Starbucks">
+
+</div>
+
+</section>
+
+<section id="galeri">
+
+<h2 class="section-title">
+Galeri Kegiatan
+</h2>
+
+<div class="gallery">
+
+<div class="gallery-item">
+<img src="brosur.jpg">
+<h3>Brosur Kampanye</h3>
+</div>
+
+<div class="gallery-item">
+<img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93">
+<h3>Produk Starbucks</h3>
+</div>
+
+<div class="gallery-item">
+<img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085">
+<h3>Minuman Starbucks</h3>
+</div>
+
+</div>
+
+</section>
+
+<section id="kontak">
+
+<h2 class="section-title">
+Kontak Kami
+</h2>
+
+<div class="contact">
+
+<p><strong>Perusahaan :</strong> Starbucks Coffee Indonesia</p>
+<p><strong>Email :</strong> pr.indonesia@starbucks.com</p>
+<p><strong>Telepon :</strong> (021) 2988 1234</p>
+<p><strong>Website :</strong> www.starbucks.co.id</p>
+<p><strong>Alamat :</strong> Jl. Jend. Sudirman Kav. 52-53, Jakarta Selatan</p>
+
+</div>
+
+</section>
+
+<footer>
+
+<h2>Starbucks Coffee Indonesia</h2>
+
+<p>
+Bring Your Own Tumbler • Less Plastic • Better Future
+</p>
+
+<br>
+
+<p>
+© 2026 Starbucks Indonesia. All Rights Reserved.
+</p>
+
+</footer>
+
+</body>
+</html>
